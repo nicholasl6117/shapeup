@@ -8,6 +8,7 @@
 	<meta name="keywords" content="Shape up, work out, diet, health, cardio, strength, stress">
 	<meta name="author" content="Nicholas Lucci">
 
+	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
 
 
@@ -17,10 +18,14 @@
 <body>
 	<header>
 		<img src="images/shape_up_logo.png" alt="Shape Up Logo">
+		<div>
 		<h2>Shape Up!</h2>
 		<h3>Find the best shape for you!</h3>
+		</div>
 	</header>
 	<main>
+		<section>
+
 		<h1>Get Ready to Shape Up!</h1>
 
 		<p>How many times have you started a new workout routine or diet? And how many times has it failed to give you the results you want? Now, with the help of this site, you can learn about the exercises and diet that work best for you. We offer personalized programs as well as access to several health and dieting tools. So don't wait! Get started looking and feeling better today.</p>
@@ -43,6 +48,8 @@
 		<h4><a href="diet/index.html">Eat What's Right for You</a></h4>
 		<p>Are you really what you eat? Lose weight, gain weight, or just feel great! Maintaining a healthy diet is probably the most important thing you can do to promote overall health.</p>
 
+		</section>
+		<aside>
 
 		<h2>Additional Resources</h2>
 		<ul>
@@ -53,12 +60,18 @@
 			<li><a href="https://www.self.com/gallery/power-yoga-workout" target="_blank">Yoga workout</a></li>
 		</ul>
 
-
+		</aside>
 	</main>
 	<footer>
-		
+		<p>&copy; <span id="copyrightyear"></span> Shape Up!</p>
 	</footer>
 
 </body>
-	<p>&copy; 2026 Shape Up!</p>
+
+
 </html>
+
+<script>
+	const d = new Data();
+	document.getElementById('copyrightyear').innerHTML = d.getFullYear();
+</script>

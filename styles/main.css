@@ -4,15 +4,27 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: lightsteelblue;
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
     line-height: 1.4;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 3px solid steelblue;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px gray;
 }
 
 header {
     display: flex;
     align-items: center;
+    border-bottom: 3px solid steelblue;
+    background-image: linear-gradient(to right, white, lightsteelblue)
 }
 
 header h2 {
@@ -38,6 +50,57 @@ aside a:visited {
     color: maroon;
 }
 
-h4 {
+main {
+    display: flex;
+}
+
+aside {
+    max-width: 25%;
+}
+
+section {
+    max-width: 75%;
+}
+
+section h1 {
+    margin-left: 3%;
+}
+
+section blockquote {
+    margin: 0 5% 10px;
+    border-left: 5px solid steelblue;
+    background-color: lightblue;
+    padding: 7px;
+}
+
+section h2,
+aside h2,
+section p {
+    margin: 0 2% 10px;
+}
+
+section h4 {
     font-weight: normal;
+    margin: 0 2% 10px;
+}
+
+aside h2{
+    margin-top: 20px;
+}
+
+aside ul li {
+    margin: 0 10%;
+}
+
+footer {
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer p {
+    padding: 10px 0;
+    font-variant: small-caps;
 }

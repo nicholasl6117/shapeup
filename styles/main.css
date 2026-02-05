@@ -1,3 +1,4 @@
+/* ***************************************All*************************************** */
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,9 @@ html {
     background-color: lightsteelblue;
 }
 
+
+
+/* ***************************************Body*************************************** */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
@@ -20,6 +24,9 @@ body {
     box-shadow: 5px 5px 10px 5px gray;
 }
 
+
+
+/* ***************************************Header*************************************** */
 header {
     display: flex;
     align-items: center;
@@ -50,16 +57,68 @@ aside a:visited {
     color: maroon;
 }
 
+
+
+/* ***************************************Navigation Menu*************************************** */
+#nav_menu {
+    border-bottom: 5px solid steelblue;
+    background-color: steelblue;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+}
+
+#nav_menu li {
+    width: 20%;
+}
+
+#nav_menu a {
+    display: block;
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+    padding: .7em 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#nav_menu ul ul li a {
+    text-align: left;
+    padding-left: .25em;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+#nav_menu a:hover {
+    color: black;
+    background-color: lightsteelblue;
+}
+
+
+
+/* ***************************************Main*************************************** */
 main {
     display: flex;
 }
 
 aside {
-    max-width: 25%;
+    width: 30%;
 }
 
 section {
-    max-width: 75%;
+    max-width: 70%;
 }
 
 section h1 {
@@ -69,12 +128,12 @@ section h1 {
 section blockquote {
     margin: 0 5% 10px;
     border-left: 5px solid steelblue;
+    border-radius: 0 10px 10px 0;
     background-color: lightblue;
     padding: 7px;
 }
 
 section h2,
-aside h2,
 section p {
     margin: 0 2% 10px;
 }
@@ -84,14 +143,54 @@ section h4 {
     margin: 0 2% 10px;
 }
 
-aside h2{
-    margin-top: 20px;
+/* aside h2{
+    margin-top: 25px;
+    text-align: center;
 }
 
 aside ul li {
     margin: 0 10%;
+} */
+
+
+
+/* ***************************************Navigation List*************************************** */
+#nav_list h2 {
+    margin: 25px 0;
+    text-align: center;
 }
 
+#nav_list ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+#nav_list li {
+    width: 90%;
+    border: 1px solid steelblue;
+    border-radius: 5px;
+}
+
+#nav_list a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightsteelblue;
+    border-radius: 4px;
+    padding: .5em;
+    color: black;
+}
+
+#nav_list a:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+
+/* ***************************************Footer*************************************** */
 footer {
     background-color: steelblue;
     color: white;

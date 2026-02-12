@@ -1,5 +1,5 @@
 /* ***************************************All*************************************** */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,11 +41,13 @@ header h2 {
     text-shadow: 2px 2px 10px gray;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: steelblue;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: maroon;
 }
 
@@ -98,7 +100,7 @@ aside a:visited {
     padding-left: .25em;
 }
 
-#nav_menu ul li:hover > ul {
+#nav_menu ul li:hover>ul {
     display: block;
 }
 
@@ -175,7 +177,8 @@ section h4 a {
     text-decoration: none;
 }
 
-section h4 a:link, section h4 a:visited {
+section h4 a:link,
+section h4 a:visited {
     color: black;
     transition: color 800ms;
 }
@@ -269,4 +272,72 @@ footer {
 footer p {
     padding: 10px 0;
     font-variant: small-caps;
+}
+
+/* ***************************************Mobile Menu*************************************** */
+#mobilemenu {
+    display: none;
+}
+
+
+/* ***************************************Media Queries*************************************** */
+@media only screen and (max-width: 933px) {
+    body {
+        box-shadow: none;
+        font-size: 90%;
+        margin: 0 auto;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    #left {
+        order: 2;
+        flex: 0 1 90%;
+    }
+
+    section {
+        flex: 0 1 70%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: steelblue;
+    }
+
+    #mobilemenu a {
+        color: white;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        max-width: 95%;
+    }
+
+    #right {
+        order: 3;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    header {
+        flex-direction: column;
+    }
 }
